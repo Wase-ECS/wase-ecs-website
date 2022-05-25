@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %} - Wase ECS</title>
+
+    <!-- Meta tags -->
+    <meta name="description" content="Wase ECS is an open source entity component system made with C++.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+</head>
+<body>
+<div class="container">
+
+    <!-- Wase ECS logo in the center -->
+    <div class="center">
+        <a href="{{ path('index') }}">
+            <img src="{{ asset('img/logo.png') }}" alt="Wase ECS logo" id="logo">
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="card">
+
+        {% block body %}{% endblock %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
